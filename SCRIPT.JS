@@ -21,3 +21,7 @@ let profileModal = document.getElementById('profileModal');
 profileBtn.addEventListener('click', function() {
     profileModal.style.display = 'flex';
 });
+let closeProfileBtn = document.getElementById('closeProfileBtn');
+closeProfileBtn.addEventListener('click', function() {
+    profileModal.style.display = 'none';
+});
