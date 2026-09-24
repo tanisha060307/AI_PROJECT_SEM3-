@@ -25,3 +25,20 @@ let closeProfileBtn = document.getElementById('closeProfileBtn');
 closeProfileBtn.addEventListener('click', function() {
     profileModal.style.display = 'none';
 });
+let nameInput = document.getElementById('nameInput');
+let emailInput = document.getElementById('emailInput');
+let semesterInput = document.getElementById('semesterInput');
+let collegeinput =document.getElementById('collegeInput');
+// Find the Save Profile button
+let saveProfileBtn = document.getElementById('saveProfileBtn');
+
+// When Save Profile is clicked
+saveProfileBtn.addEventListener('click', function() {
+
+    // Get whatever the user typed
+    console.log(nameInput.value);
+    console.log(emailInput.value);
+    console.log(semesterInput.value);
+    console.log(collegeInput.value);
+
+});
