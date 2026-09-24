@@ -32,16 +32,53 @@ header {
     border-bottom: 1px solid #e5e7eb;
 }
 
-.logo h1 {
-    font-size: 24px;
+/* =========================
+   EYE-CATCHY ACEBCA BRANDING
+========================= */
+
+/* Main Title Gradient & Glow */
+.brand-title {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    /* Electric Purple-to-Cyan Gradient */
+    background: linear-gradient(135deg, #c084fc 0%, #6366f1 50%, #38bdf8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Soft neon glow effect behind text */
+    filter: drop-shadow(0 2px 10px rgba(168, 85, 247, 0.35));
 }
 
-.logo p {
+/* Glowing Accent for "BCA" */
+.brand-accent {
+    background: linear-gradient(135deg, #f472b6 0%, #c084fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Subtitle Styling */
+.brand-tagline {
     font-size: 13px;
-    color: #6b7280;
+    color: #94a3b8;
     margin-top: 4px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
+/* Monospace Pill Badge for "coded" */
+.code-badge {
+    background: rgba(168, 85, 247, 0.15);
+    color: #d8b4fe;
+    padding: 2px 7px;
+    border-radius: 6px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid rgba(168, 85, 247, 0.3);
+    letter-spacing: 0.5px;
+}
 .profile button {
     padding: 10px 16px;
 
