@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI for BCA Sem 3</title>
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+
+        <div class="logo">
+            <h1>AI for BCA Sem 3</h1>
+            <p>Your AI-powered study companion</p>
+        </div>
+
+        <!-- User profile -->
+        <div class="profile">
+            <button id="themeToggle">🌙 Dark Mode</button>
+            <button id="profileBtn">👤 Profile</button>
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+
+        <!-- ================ LEFT SIDEBAR ================ -->
+        <aside class="sidebar">
+
+            <nav>
+
+                <button class="nav-btn" id="subjectsBtn">
+                    📚 Subjects
+                </button>
+
+                <button class="nav-btn" id="notesBtn">
+                    📖 Notes
+                </button>
+
+                <button class="nav-btn" id="quizBtn">
+                    📝 Quiz
+                </button>
+
+                <button class="nav-btn" id="summaryBtn">
+                    📋 Summary
+                </button>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- ================ MAIN AREA ================ -->
+        <section class="content">
+
+            <!-- Subjects Section -->
+            <section id="subjectsSection">
+
+                <h2>Subjects</h2>
+
+                <div class="subjects">
+
+                    <div class="subject-card">
+                        <h3>🐍 Python</h3>
+                        <p>View syllabus and units</p>
+                    </div>
+
+                    <div class="subject-card">
+                        <h3>🗄️ DBMS</h3>
+                        <p>View syllabus and units</p>
+                    </div>
+
+                    <div class="subject-card">
+                        <h3>📊 Feature Engineering</h3>
+                        <p>View syllabus and units</p>
+                    </div>
+
+                    <div class="subject-card">
+                        <h3>💻 Software Engineering</h3>
+                        <p>View syllabus and units</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Notes Section -->
+            <section id="notesSection">
+
+                <h2>Notes</h2>
+
+                <p>
+                    Select a subject and unit to view study notes.
+                </p>
+
+            </section>
+
+
+            <!-- Quiz Section -->
+            <section id="quizSection">
+
+                <h2>Quiz</h2>
+
+                <p>
+                    Test your knowledge with subject-wise quizzes.
+                </p>
+
+            </section>
+
+
+            <!-- Summary Section -->
+            <section id="summarySection">
+
+                <h2>Unit Summary</h2>
+
+                <p>
+                    Get short and easy-to-revise summaries for each unit.
+                </p>
+
+            </section>
+
+
+            <!-- ================ AI CHATBOT ================ -->
+            <section class="ai-section">
+
+                <div class="ai-header">
+                    <h2>🤖 AI Study Assistant</h2>
+                    <p>Ask questions related to your BCA Sem 3 subjects.</p>
+                </div>
+
+
+                <!-- Chat messages will appear here -->
+                <div id="chatBox" class="chat-box">
+
+                    <div class="ai-message">
+                        <p>
+                            👋 Hello! I'm your BCA Sem 3 AI Study Assistant.
+                        </p>
+
+                        <p>
+                            Ask me about Python, DBMS,
+                            Feature Engineering or Software Engineering.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- User input -->
+                <div class="chat-input">
+
+                    <input
+                        type="text"
+                        id="userInput"
+                        placeholder="Ask your question..."
+                    >
+
+                    <button id="sendBtn">
+                        Send
+                    </button>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <h2>Study & Career</h2>
+
+        <div class="footer-links">
+
+            <div>
+                <h3>📅 Exam Schedule</h3>
+                <p>View important exam dates.</p>
+            </div>
+
+            <div>
+                <h3>📚 Study Routine</h3>
+                <p>Plan your semester preparation.</p>
+            </div>
+
+            <div>
+                <h3><a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer">🧩 DSA</a></h3>
+                <p>Build your problem-solving skills.</p>
+            </div>
+
+            <div>
+                <h3>🌐 Web Development</h3>
+                <p>Develop skills beyond the syllabus.</p>
+            </div>
+
+        </div>
+
+        <p>
+            © 2026 WITH LOVE FROM TANISHA.<BR>
+            All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
