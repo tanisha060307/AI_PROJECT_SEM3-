@@ -50,6 +50,15 @@ saveProfileBtn.addEventListener('click', function() {
     profileBtn.textContent = "👤 " + userProfile.name;
 profileModal.style.display = "none";
 });
+document.addEventListener('keydown', function(event) {
+
+    // Check if the user pressed Enter
+    if (event.key === 'Enter') {
+
+        // Save the profile
+        saveProfileBtn.click();
+    }
+});
 // Check whether a profile was saved in this browser
 let savedProfileText = localStorage.getItem("userProfile");
 
