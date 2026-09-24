@@ -17,3 +17,7 @@ let profileBtn = document.getElementById('profileBtn');
 profileBtn.addEventListener('click', function() {
     console.log('Profile button clicked');
 });
+let profileModal = document.getElementById('profileModal');
+profileBtn.addEventListener('click', function() {
+    profileModal.style.display = 'flex';
+});
