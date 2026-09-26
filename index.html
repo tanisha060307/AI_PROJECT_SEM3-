@@ -208,11 +208,12 @@
 
         <div class="footer-links">
 
-            <div>
-                <h3>📅 Exam Schedule</h3>
-                <p>View important exam dates.</p>
-            </div>
-
+            <button type="button" id="examScheduleBtn" class="footer-feature">
+    <span class="footer-feature-title">📅 Exam Schedule</span>
+    <span class="footer-feature-description">
+        -View important exam dates.
+    </span>
+</button>
             <div>
                 <h3>📚 Study Routine</h3>
                 <p>Plan your semester preparation.</p>
@@ -237,10 +238,46 @@
 
     </footer>
 
+    <!-- Exam Schedule Calendar Popup -->
+<div id="examCalendarModal" class="calendar-modal">
+    <div class="calendar-box">
 
-    <!-- JavaScript file -->
-    <script src="script.js"></script>
+        <div class="calendar-header">
+            <h2>Odd Semester Exam Schedule</h2>
+            <button type="button" id="closeCalendarBtn">✕</button>
+        </div>
 
+        <div class="calendar-navigation">
+            <button type="button" id="prevMonthBtn">❮</button>
+            <h3 id="calendarMonth">September 2026</h3>
+            <button type="button" id="nextMonthBtn">❯</button>
+        </div>
+
+        <div class="calendar-weekdays">
+            <span>Sun</span>
+            <span>Mon</span>
+            <span>Tue</span>
+            <span>Wed</span>
+            <span>Thu</span>
+            <span>Fri</span>
+            <span>Sat</span>
+        </div>
+
+        <!-- JavaScript will add the calendar date cells here -->
+        <div id="calendarDays" class="calendar-days"></div>
+
+        <div class="calendar-legend">
+            <span>🟡 Assessment / submission</span>
+            <span>🔵 Examination</span>
+        </div>
+
+        <div id="calendarEventDetails" class="calendar-event-details">
+            Select a marked date to view its details.
+        </div>
+
+    </div>
+</div>
+<script src="script.js"></script>
 </body>
 
 </html>

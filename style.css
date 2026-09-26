@@ -553,3 +553,334 @@ body.dark-mode .chat-input button {
 body.dark-mode .chat-input button:hover {
     background-color: #9333ea;
 }
+/* =========================
+   EXAM CALENDAR POPUP
+========================= */
+
+.calendar-modal {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.6);
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.calendar-box {
+    background: white;
+
+    width: 90%;
+    max-width: 600px;
+
+    max-height: 85vh;
+    overflow-y: auto;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Calendar Header */
+
+.calendar-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.calendar-header h2 {
+    margin: 0;
+}
+
+.calendar-header button {
+    border: none;
+
+    background: transparent;
+
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+
+/* Month Navigation */
+
+.calendar-navigation {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.calendar-navigation button {
+    border: none;
+
+    background: #f1f5f9;
+
+    padding: 8px 12px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.calendar-navigation h3 {
+    margin: 0;
+}
+
+
+/* Weekdays */
+
+.calendar-weekdays {
+    display: grid;
+
+    grid-template-columns: repeat(7, 1fr);
+
+    text-align: center;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+/* Calendar Dates */
+
+.calendar-days {
+    display: grid;
+
+    grid-template-columns: repeat(7, 1fr);
+
+    gap: 8px;
+}
+
+.calendar-days span {
+    min-height: 45px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 8px;
+
+    background: #f8fafc;
+}
+
+
+/* Legend */
+
+.calendar-legend {
+    display: flex;
+
+    gap: 20px;
+
+    margin-top: 20px;
+
+    font-size: 14px;
+}
+
+
+/* Event Details */
+
+.calendar-event-details {
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background: #f8fafc;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+}
+.calendar-days .important-date {
+    background: #dbeafe;
+    color: #1d4ed8;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #93c5fd;
+}
+
+.calendar-days .important-date:hover {
+    transform: scale(1.05);
+}
+/* =========================
+   CALENDAR BUTTONS
+========================= */
+
+.calendar-header button,
+.calendar-navigation button {
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Close button */
+.calendar-header button {
+    background: #f1e8ff;
+    color: #6b21a8;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.calendar-header button:hover {
+    background: #7c3aed;
+    color: white;
+    transform: rotate(90deg);
+}
+
+/* Previous / Next buttons */
+.calendar-navigation button {
+    background: #f1e8ff;
+    color: #6b21a8;
+    font-size: 18px;
+    padding: 9px 14px;
+    border-radius: 10px;
+}
+
+.calendar-navigation button:hover {
+    background: #7c3aed;
+    color: white;
+    transform: scale(1.08);
+}
+
+
+/* =========================
+   IMPORTANT DATES
+========================= */
+
+.calendar-days .important-date {
+    background: #ede9fe;
+    color: #6b21a8;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #c4b5fd;
+    transition: 0.2s ease;
+}
+
+.calendar-days .important-date:hover {
+    background: #7c3aed;
+    color: white;
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   DARK MODE CALENDAR
+========================= */
+
+body.dark-mode .calendar-box {
+    background: #241338;
+    color: #f5eaff;
+}
+
+body.dark-mode .calendar-days span {
+    background: #32194d;
+    color: #eadcff;
+}
+
+body.dark-mode .calendar-navigation button,
+body.dark-mode .calendar-header button {
+    background: #4c2670;
+    color: #eadcff;
+}
+
+body.dark-mode .calendar-navigation button:hover,
+body.dark-mode .calendar-header button:hover {
+    background: #8b5cf6;
+    color: white;
+}
+
+body.dark-mode .calendar-days .important-date {
+    background: #542b78;
+    color: #e9d5ff;
+    border: 1px solid #8b5cf6;
+}
+
+body.dark-mode .calendar-days .important-date:hover {
+    background: #8b5cf6;
+    color: white;
+}
+
+body.dark-mode .calendar-event-details {
+    background: #32194d;
+    color: #eadcff;
+}
+
+body.dark-mode .calendar-legend {
+    color: #eadcff;
+}
+/* Calendar buttons - Light theme */
+.calendar-navigation button,
+.calendar-header button {
+    background: #eee6ff;
+    color: #6b21a8;
+    border: 1px solid #c4b5fd;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.calendar-navigation button:hover,
+.calendar-header button:hover {
+    background: #7c3aed;
+    color: white;
+}
+
+/* Calendar buttons - Dark theme */
+body.dark-mode .calendar-navigation button,
+body.dark-mode .calendar-header button {
+    background: #3b1f52;
+    color: #d8b4fe;
+    border: 1px solid #7c3aed;
+}
+
+body.dark-mode .calendar-navigation button:hover,
+body.dark-mode .calendar-header button:hover {
+    background: #8b5cf6;
+    color: white;
+}
+/* =========================
+   EXAM SCHEDULE FOOTER BUTTON
+========================= */
+
+#examScheduleBtn {
+    border: none;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    text-align: left;
+    font: inherit;
+    padding: 0;
+    transition: 0.3s ease;
+}
+
+#examScheduleBtn:hover {
+    color: #7c3aed;
+    transform: translateX(3px);
+}
+
+/* Dark mode */
+body.dark-mode #examScheduleBtn {
+    background: transparent;
+    color: inherit;
+}
+
+body.dark-mode #examScheduleBtn:hover {
+    color: #c084fc;
+}
